@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <meta name="theme-color" content="#2F80ED" />
+  <title>Login</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="/icons/fasttask-icon-192.png" type="image/png">
+  <link rel="stylesheet" href="css/login.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="js/auth.js" defer></script>
+</head>
+<body>
+  <form id="loginForm">
+    <h2>Login</h2>
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="password" name="password" placeholder="Senha" required />
+    <button type="submit">Entrar</button>
+    <p style="text-align:center;">
+      <a href="register.html">Não tem conta? Cadastre-se</a>
+    </p>
+  </form>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("Service Worker registrado com sucesso"))
+        .catch(err => console.error("Erro ao registrar o Service Worker:", err));
+    }
+  </script>
+</body>
+</html>

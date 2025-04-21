@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="js/dashboard.js" defer></script>
+</head>
+<body>
+  <main>
+    <button id="logoutBtn" style="float: right; background: crimson; color: white; margin-bottom: 1rem;">
+  Sair
+</button>
+    <h1>Minhas Tarefas</h1>
+
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Nova tarefa..." required />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <ul id="taskList"></ul>
+  </main>
+</body>
+</html>
