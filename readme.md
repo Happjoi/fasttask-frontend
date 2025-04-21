@@ -29,7 +29,4 @@
 
 ## 🧪 Como Rodar
 
-1. Clone este repositório:
-```bash
-git clone https://github.com/Happjoi/fasttask-frontend.git
-cd fasttask-frontend
+1. Basta entrar no link https://fasttaskfe.netlify.app
