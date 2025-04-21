@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:7000/api';
+const API_BASE = 'https://fasttask-backend.onrender.com/api';
 
 export const api = {
   login: (data) => axios.post(`${API_BASE}/auth/login`, data),
